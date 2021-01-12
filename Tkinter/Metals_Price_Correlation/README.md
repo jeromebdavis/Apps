@@ -1,1 +1,1 @@
-
+Two Python Tkinter apps to calculate correlation in metals prices. One app has uses the pack method, the other app uses the grid method. I also created exe files for these apps using Pyinstaller, but the files were too large to upload. These exe files can be created by installing the pyinstaller package, navigating to the location of the python file and running the following command "pyinstaller --onefile --noconsole .py".
