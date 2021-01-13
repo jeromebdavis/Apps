@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.baby {
+  background-color: powderblue;
+  color: black;
+  margin: 25px;
+  padding: 100px;
+  font-size: 50px;
+}
+</style>
+</head>
+
+<body onload="onloadFunction()">
+
+<div id="DIV_0">
+<p>Guessing Game</p>
+</div>
+
+<div id="DIV_1">
+A structured set of data held in a computer (eight letter word).
+<br>
+<input type="text" id="Text_1" value="">
+<br>
+<button onclick="myFunction_1('DIV_2','Text_1','DATABASE')">Input Guess</button>
+</div>
+
+<div id="DIV_2_0">
+<br>
+</div>
+<div id="DIV_2"> 
+<input type="text" id="Text_2" value="">
+<br>
+<button onclick="myFunction_2('DIV_3','Text_2','ALGORITHM')">Input Guess</button>
+</div>
+
+<div id="DIV_3_0">
+<br>
+</div>
+<div id="DIV_3">
+<input type="text" id="Text_3" value="">
+<br>
+<button onclick="myFunction_3('DIV_4','Text_3','TABLE')">Input Guess</button>
+</div>
+
+<div id="DIV_4_0">
+<br>
+</div>
+<div id="DIV_4">
+<input type="text" id="Text_4" value="">
+<br>
+<button onclick="myFunction_4('DIV_5','Text_4','API')">Input Guess</button>
+</div>
+
+<div id="DIV_5_0">
+<br>
+</div>
+<div id="DIV_5">
+<input type="text" id="Text_5" value="">
+<br>
+<button onclick="myFunction_5('DIV_6','Text_5','DATA')">Input Guess</button>
+</div>
+
+<div id="DIV_6" class="baby">
+</div>
+
+<div id="DIV_01">
+<p><b>Note:</b> Please put the answer in the label and press the button. Another question may then be revealed </p>
+</div>
+
+
+<script>
+function onloadFunction() {
+	document.getElementById("DIV_2").style.display = "none";
+	document.getElementById("DIV_3").style.display = "none";
+	document.getElementById("DIV_4").style.display = "none";
+	document.getElementById("DIV_5").style.display = "none";
+	document.getElementById("DIV_6").style.display = "none";
+	//document.getElementById("DIV_6").innerHTML += 'Baby Davis due October 2020!!!&#128118'
+}
+
+function myFunction_1(var1, var2, var3) {
+  var x = document.getElementById(var1);
+  var y = document.getElementById(var2).value;
+  if (y.toUpperCase() === var3) {
+    x.style.display = "block";
+	document.getElementById('DIV_2_0').innerHTML += 'A process or set of rules to be followed in calculations or other problem-solving operations (nine letter word).';
+  } else {
+	alert('please try again')
+    x.style.display = "none";
+  }  
+}
+
+function myFunction_2(var1, var2, var3) {
+  var x = document.getElementById(var1);
+  var y = document.getElementById(var2).value;
+  if (y.toUpperCase() === var3) {
+    x.style.display = "block";
+	document.getElementById('DIV_3_0').innerHTML += 'Used to display information in a tabular form with rows and/or columns (five letter word).';
+  } else {
+	alert('please try again')
+    x.style.display = "none";
+  }  
+}
+
+function myFunction_3(var1, var2, var3) {
+  var x = document.getElementById(var1);
+  var y = document.getElementById(var2).value;
+  if (y.toUpperCase() === var3) {
+    x.style.display = "block";
+	document.getElementById('DIV_4_0').innerHTML += 'A common interface used to extract data (three letter acronym).';
+  } else {
+	alert('please try again')
+    x.style.display = "none";
+  }  
+}
+
+function myFunction_4(var1, var2, var3) {
+  var x = document.getElementById(var1);
+  var y = document.getElementById(var2).value;
+  if (y.toUpperCase() === var3) {
+    x.style.display = "block";
+	document.getElementById('DIV_5_0').innerHTML += 'What do the letters of the above four words (four letter word)?';
+  } else {
+	alert('please try again')
+    x.style.display = "none";
+  }  
+}
+
+function myFunction_5(var1, var2, var3) {
+  var x = document.getElementById(var1);
+  var y = document.getElementById(var2).value;
+  if (y.toUpperCase() === var3) {
+    x.style.display = "block";
+	document.getElementById("DIV_0").style.display = "none";
+	document.getElementById("DIV_01").style.display = "none";
+	document.getElementById("DIV_1").style.display = "none";
+	document.getElementById("DIV_2").style.display = "none";
+	document.getElementById("DIV_3").style.display = "none";
+	document.getElementById("DIV_4").style.display = "none";
+	document.getElementById("DIV_5").style.display = "none";
+	document.getElementById("DIV_2_0").style.display = "none";
+	document.getElementById("DIV_3_0").style.display = "none";
+	document.getElementById("DIV_4_0").style.display = "none";
+	document.getElementById("DIV_5_0").style.display = "none";
+	document.getElementById("DIV_6").innerHTML += 'Data rules the world!';
+  } else {
+	alert('please try again')
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
+
+

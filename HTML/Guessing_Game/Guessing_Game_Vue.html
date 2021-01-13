@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spring Announcement</title>
+</head>
+<body>
+
+	<br>
+
+	<div id="app">
+		<div v-if="answer5!=guess5.toUpperCase()">
+			<p>Guessing Game</p>
+			<p>Please put guess in input box</p>
+			<br>
+			<div>A structured set of data held in a computer (eight letter word).</div>
+			<input type="text" v-model="guess1">
+			<div v-if="answer1==guess1.toUpperCase()">A process or set of rules to be followed in calculations or other problem-solving operations (nine letter word).</div>
+			<input type="text" v-model="guess2" v-if="answer1==guess1.toUpperCase()">
+			<div v-if="answer2==guess2.toUpperCase()">Used to display information in a tabular form with rows and/or columns (five letter word).</div>
+			<input type="text" v-model="guess3" v-if="answer2==guess2.toUpperCase()">
+			<div v-if="answer3==guess3.toUpperCase()">A common interface used to extract data (three letter acronym).</div>
+			<input type="text" v-model="guess4" v-if="answer3==guess3.toUpperCase()">
+			<div v-if="answer4==guess4.toUpperCase()">What do the letters of the above four words (four letter word)?</div>
+			<input type="text" v-model="guess5" v-if="answer4==guess4.toUpperCase()">
+		</div>
+		<div v-if="answer5==guess5.toUpperCase()">
+			<p>Data rules the world!<p>
+		</div>
+
+		
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<script>
+        
+		new Vue({
+			el: '#app',
+			
+			data: {
+				guess1: '',
+				guess2: '',
+				guess3: '',
+				guess4: '',
+				guess5: '',
+				answer1: 'DATABASE',
+				answer2: 'ALGORITHM',
+				answer3: 'TABLE',
+				answer4: 'API',
+				answer5: 'DATA',
+			}
+		
+		});
+
+	</script>
+	
+
+</body>
+</html>
